@@ -1,0 +1,7 @@
+<section class="command-container">
+  @for (cmd of commandKeys(); track $index) {
+  <button (click)="onPressKey(cmd)">
+    {{ (!isOn && cmd.internal === "on-off" ? "on" : cmd.external) | uppercase }}
+  </button>
+  }
+</section>

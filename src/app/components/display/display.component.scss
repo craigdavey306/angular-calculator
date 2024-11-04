@@ -1,0 +1,16 @@
+.display {
+  --display-bg-color: #9eb3af;
+  --display-border-inset-color: rgba(179, 158, 173, 0.2);
+  clear: both;
+  padding: 20px;
+  background: var(--display-bg-color);
+  font-family: digital;
+  font-size: 24px;
+  border: 10px inset var(--display-border-inset-color);
+  text-align: right;
+  letter-spacing: 5px;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 30px;
+}

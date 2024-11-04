@@ -1,0 +1,25 @@
+<section class="calculator-container">
+  <section class="display-container">
+    <calc-brand [brand]="brand" />
+    <calc-solar-cells />
+    <calc-model [model]="model" />
+    <calc-display [equation]="!isOn ? '' : result || initialResult" />
+  </section>
+
+  <section class="input-container">
+    <div class="commandNumber-container">
+      <calc-command-keys
+        [commandKeys]="keys.command"
+        (selectedCommand)="onPressCommandKey($event)"
+      />
+      <calc-numeric-keys
+        [rows]="keys.numeric"
+        (selectedNumber)="onPressNumericKey($event)"
+      />
+    </div>
+    <calc-operator-keys
+      [operatorKeys]="keys.operator"
+      (selectedOperation)="onPressOperationKey($event)"
+    />
+  </section>
+</section>

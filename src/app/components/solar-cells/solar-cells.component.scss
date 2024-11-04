@@ -1,0 +1,19 @@
+.solar {
+  --solar-bg-color: #46463c;
+  --solar-inset-color: #293c46;
+  border: 5px inset var(--solar-inset-color);
+  background: var(--solar-bg-color);
+  width: 100px;
+  height: 30px;
+  float: right;
+  margin-bottom: 10px;
+
+  span {
+    --solar-border-color: #31342c;
+    border-right: 2px solid var(--solar-border-color);
+    width: 23px;
+    height: inherit;
+    display: block;
+    float: left;
+  }
+}

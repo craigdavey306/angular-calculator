@@ -1,0 +1,18 @@
+.command-container {
+  overflow: hidden;
+  float: left;
+}
+
+button {
+  background: #4b494e;
+}
+
+button:first-child {
+  background: #6b5ba4;
+  font-size: 20px;
+}
+
+button:last-child {
+  background: #e38f4f;
+  color: black;
+}

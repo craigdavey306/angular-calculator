@@ -1,0 +1,5 @@
+<section class="operator-container">
+  @for (op of operatorKeys(); track $index) {
+  <button (click)="onPressKey(op)" [disabled]="!isOn">{{ op.external }}</button>
+  }
+</section>

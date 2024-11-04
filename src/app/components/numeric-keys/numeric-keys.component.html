@@ -1,0 +1,7 @@
+<section class="number-container">
+  @for (row of rows(); track $index) { @for (key of row; track $index) {
+  <button (click)="onPressKey(key)" [disabled]="!isOn">
+    {{ key.external }}
+  </button>
+  } }
+</section>
